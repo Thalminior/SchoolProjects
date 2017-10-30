@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>review form</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="dcterms.rightsHolder" content="Jared Hall" />
+<meta name="dcterms.dateCopyrighted" content="2017" />
+<meta name="review" content="form and table" />
+<meta name="keywords" content=""/>
+<link rel="stylesheet" href="style/flex.css" type="text/css" />
+</head>
+<body>
+<header> Form and Table</header>
+<div class="container">
+
+<!-- Form -->
+<div class="item">
+
+<p>form</p>
+
+<form method="get" action="#">
+<label for="login">Username</label>
+<input type="text" name="user" id="login" placeholder="Username"/>
+<br/>
+<label for="password">Password:</label>
+<input type="password" name="passwd" id="password" placeholder="stupid requirements"/>
+<br/>
+
+<p>password <s>theft</s> help</p>
+<select name="help">
+<option value="">what do you use?</option>
+
+
+<optgroup label="Special Characters">
+
+	<option value="yell">!</option>
+	<option value="mail">@</option>
+	<option value="hash">#</option>
+	
+<optgroup label="Numbers">
+	<option value="num1">1</option>
+	<option value="num2">2</option>
+	<option value="num3">3</option>
+	<option value="num4">4</option>
+	<option value="num5">5</option>
+	<option value="num6">6</option>
+</optgroup>
+</select>
+<br/>
+<br/>
+
+<fieldset>
+<legend>What number did you choose?</legend>
+
+<input type="radio" name="response1" value="1"/> 1
+<input type="radio" name="response2" value="2"/> 2
+<input type="radio" name="response3" value="3"/> 3
+<input type="radio" name="response4" value="4"/> 4
+<input type="radio" name="response5" value="5"/> 5
+<input type="radio" name="response6" value="6"/> 6
+</fieldset>
+<br/>
+
+<textarea rows="3" cols="30" placeholder="SSN# and Mothers madien name here please"></textarea>
+
+<br/>
+<label for="happy" >did this please you?</label>
+<input type="checkbox" name="check" value="please" id="happy" checked="checked" />
+
+<br/><br/><br/>
+<input type="submit" name="sent" value="send" />
+<input class="round" type="reset" name="clear" value="reset" /> 
+
+</form>
+</div>
+
+
+
+<!-- table -->
+<div class="item">
+ <p>Crickets in the classroom</p>
+ 
+	<table>
+		<tr>
+			<th>Professor</th>
+			<th>Crickets</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<th>Stomps</th>
+			<th>Survival Rate</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>100%</td>
+		</tr>
+	</table>
+ <p>Crickets win</p>
+
+</div>
+
+
+
+</div>
+<div id="validator">
+<a href="http://validator.w3.org/nu/?doc=https://nbtl.mesacc.edu/thalminior/cis233da/review.html">
+HTML 5 Validation</a>
+<a href="./">Go Back</a>
+</div>
+</body>
+</html>
