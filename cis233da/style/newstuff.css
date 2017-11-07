@@ -5,12 +5,21 @@ body{
 	
 }
 aside{
-	float:left;
-	width:15%;
+	width:14rem;
+	border: 5px groove black;
+	position: fixed;
+	float: left;
+	text-align: left;
 	
 }
-main{float:left;
-	width:80%;
+aside p {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+main{
+	margin-left: 16rem;
+	width:auto;
 	max-width:60rem;
 }
 article{
@@ -42,4 +51,8 @@ h3{
 	border-radius: 166px;
 	padding-left: 2rem;
 	
+}
+a{
+	color: black;
+	font-size: 110%
 }

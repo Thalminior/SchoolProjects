@@ -1,7 +1,21 @@
+aside{
+	width:14rem;
+	border: 5px groove black;
+	position: fixed;
+	float: left;
+	text-align: left;
+	
+}
+aside p {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
 body{
 	Background-color: #80b3ff;
 }
 .container{
+	margin-left: 16rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around ;
