@@ -1,0 +1,45 @@
+/* http://paletton.com/palette.php?uid=53h0u0kl6lPaFw0g0qFqFg0w0aF */
+
+body{
+	background:#246a67;
+	
+}
+aside{
+	float:left;
+	width:15%;
+	
+}
+main{float:left;
+	width:80%;
+	max-width:60rem;
+}
+article{
+	border: 4px solid #679b99;
+	padding: 1rem;
+	
+}
+section{
+	border: 6px double #8dcf8a;
+	border-radius: 6px;
+	padding: 1rem;
+	margin: 2rem ;
+	border-collapse: collapse;
+	background: #41817f;
+}
+p{
+	padding:1rem;
+	text-align:justify;
+	text-indent:2em;
+}
+h2{
+	background: #41817f;
+	border-bottom: 4px solid #679b99;
+	border-radius: 10px;
+	padding-left: 1rem;
+}
+h3{
+	background: #679b99;
+	border-radius: 166px;
+	padding-left: 2rem;
+	
+}

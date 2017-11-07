@@ -1,12 +1,12 @@
-window.statBlock= [10,10,10,10,10,10,]
+window.strScore = 10;
 
 function buttonUp (){
-	window.statBlock[0]++;
-	document.getElementById("strenghtscore").innerHTML =  window.statBlock[0] ;
+	window.strScore++;
+	document.getElementById("strenghtscore").innerHTML =  window.strScore ;
 }
 function buttonDn (){
-	window.statBlock[0]--;
-	document.getElementById("strenghtscore").innerHTML =  window.statBlock[0] ;
+	window.strScore--;
+	document.getElementById("strenghtscore").innerHTML =  window.strScore ;
 }
 
 
@@ -15,8 +15,7 @@ function createButton(butCount)
 	var buttons = '<button type="button" id="butup' + butCount + '" name="add" value="add">+</button><button type="button" id="butdn' + butCount +'" name="add" value="remove">-</button><br/>';
 	return buttons;
 }
-window.onload = setup
-function setup ()
+window.onload = function()
 {
 	
 	var butCount = 0;
@@ -31,10 +30,10 @@ function setup ()
 		}
 		
 	document.getElementById("manybuttons").innerHTML = buttonlist;
-	document.getElementById("strenghtscore").innerHTML =  window.statBlock[0] ;
+	document.getElementById("strenghtscore").innerHTML =  window.strScore ;
 	
-    document.getElementById('butup0').onclick = buttonUp;
-	document.getElementById('butdn0').onclick = buttonDn;
+    document.getElementById('butup').onclick = buttonUp;
+	document.getElementById('butdn').onclick = buttonDn;
 	
 	
 }
