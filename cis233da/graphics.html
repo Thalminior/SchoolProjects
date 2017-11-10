@@ -11,29 +11,49 @@
 <link rel="stylesheet" href="style/flex.css" type="text/css" />
 <script src="../javascript/jscript/validator.js"></script>
 </head>
-<body>
+<body>		
+<aside>
+	<nav>
+		<p>site navigation</p>
+		<ul>
+			<li><a href="./">home</a></li> 
+			<li><a href="review.html">review page</a></li>
+			<li><a href="newhtml5.html">new html 5 </a></li>
+			<li><a href="graphics.html">graphics </a></li>
+			
+		</ul> 
+		<a id="validator"></a>
+	</nav>
+</aside>
 <header> 
-		<aside>
-				<nav>
-					<p>site navigation</p>
-					<ul>
-						<li><a href="./">home</a></li> 
-						<li><a href="review.html">review page</a></li>
-						<li><a href="newhtml5.html">new html 5 </a></li>
-						<li><a href="graphics.html">graphics </a></li>
-						
-					</ul> 
-					<a id="validator"></a>
-				</nav>
-		</aside>
 </header>
+<h1>graphic thumbnails</h1>
 <div class="container">
 <div class="item">
-	<h1>graphic thumbnails</h1>
+	<p>map thumbnail - shrunk</p>
+		<a href="images/map.png"> <img src="images/minimap.png" alt="world map thumbnail" title="map" height="100" width="100"/> </a> 
+</div>
+<div class="item">
+		<p>map thumbnail - cut</p>
+		<a href="images/map.png"> <img src="images/mappart.png" alt="world map thumbnail" title="map" height="100" width="100" /> </a> 
+</div>
+<div class="item">
+	
+	<img src="images/cutcats.png" alt="cat resting" title="cat" height="202" width="300"/>
+	<p>becasue the internet was made for cat pictures</p>
+</div>
+<div class="bigitem">
+
+<p>this is a sword, click the diffrent parts to find out what they do.</p>
+<img src="images/swordsm.png" alt="broad sword" title="sword" height="270" width="900" usemap="#swordbreakdown" />
+<map name="swordbreakdown">
+		<area shape="circle" coords="826,149,61" alt="Pointy end goes in other man" href="images/stickem.gif" />
+		<area shape="rect" coords="247,76,757,204" alt="blade - aka fidly bit" href="images/fiddlybit.png" />
+		<area shape="poly" coords="247,23,243,239,7,156,19,95" alt="how to grip" href="images/grip.png" />
+</map>
 </div>
 
 
 </div>
-
 </body>
 </html>
