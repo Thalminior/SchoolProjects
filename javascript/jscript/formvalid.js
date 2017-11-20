@@ -11,19 +11,20 @@ function createMenu(startNum,endNum,menuMsg,targetId){
 	document.getElementById(targetId).innerHTML = tell;
 }
 
+
+//text entry checking for lenght conditions
 function check(idtag,error,min,max){
-		return function(){
-			var field = document.getElementById(idtag);
-			var problem = document.getElementById(error);
-			var issue = "Required* " + min + " to " + max + " characters";
-			if ( field.value.length < min || field.value.length > max)
-			{
-				problem.innerHTML = issue;	
-			}
-			else {
-				problem.innerHTML = "";	
-			}
+	return function(){
+		var field = document.getElementById(idtag);
+		var problem = document.getElementById(error);
+		var issue = "Required* " + min + " to " + max + " characters";
+		if ( field.value.length < min || field.value.length > max){
+			problem.innerHTML = issue;	
 		}
+		else {
+			problem.innerHTML = "Good";	
+		}
+	}
 }
 
 function checkNum(){
@@ -31,7 +32,7 @@ function checkNum(){
 		document.getElementById("err4").innerHTML = "numeric value only"
 	}
 	else{
-		document.getElementById("err4").innerHTML = ""
+		document.getElementById("err4").innerHTML = "Good"
 	}
 }
 
@@ -56,7 +57,7 @@ function radiocheck2(){
 	{
 		if ( choice[i].checked == true )
 		{
-		   tell = "";
+		   tell = "good choice";
 		   break;
 		}
 	}
@@ -65,24 +66,35 @@ function radiocheck2(){
 
 //textbox checker
 function checktext(){
-	var limit = 12;
-	var text = limit - document.getElementById("text").value.length;
-	
-	
-	
-	if( document.getElementById("text").value.length <= limit){
-		 document.getElementById("remain").innerHTML = text;
+	var howmany = document.getElementById("textplace").value.length;
+	var limit = 500;
+	var text = limit - howmany;
+	if( document.getElementById("textplace").value.length < limit){
+		 document.getElementById("remain").innerHTML = text + " Character remaining" ;
 	}
 	else{
-		document.getElementById("remain").innerHTML = "stop";
-		document.getElementById("text").innerHTML.value.length = 
-		document.getElementById("text").value.substr(0,limit-1);
-
-		
-		
+		document.fancy.textplace.value = document.fancy.textplace.value.substr(0,limit)
+		document.getElementById("remain").innerHTML = "0 Characters remaining" ;
 	}
+}
 
-
+function sure (){
+	//warning text
+	var areYouSure = "---WARNING--- By NOT checking the box you agree to waive all statutory rights that pertain or may pertain to the purchase and/or use of ordered item/s, its distributor companies, thier subsidiaries, and this website. please confirm!";
+	var Excelent = document.getElementById("happytxt").innerHTML = "Excelent!";
+	if(document.getElementById('happy').checked == true ){
+		Excelent;
+	}
+	else{
+		if(confirm(areYouSure) == true){
+				document.getElementById('happy').checked = false;
+				document.getElementById("happytxt").innerHTML = "You have been warned!";
+			}
+			else{
+				document.getElementById('happy').checked = true;
+				Excelent;
+			}
+	}
 }
 
 function setup ()
@@ -91,10 +103,11 @@ function setup ()
 	document.getElementById('name').onkeyup = check('name',"err1",5,12);
 	document.getElementById('user').onkeyup = check("user","err2",5,12);
 	document.getElementById('password').onkeyup = check("password","err3",12,24);
-	document.getElementById('hmany').onkeyup = checkNum
+	document.getElementById('hmany').onkeyup = checkNum;
 	document.getElementById('optnum').onclick = radiocheck;
 	document.getElementById('optnum').onmouseover = radiocheck;
 	document.getElementById('color').onclick = radiocheck2;
 	document.getElementById('color').onmouseover = radiocheck2;
-	document.getElementById('text').onkeyup = checktext;
+	document.getElementById('textplace').onkeyup = checktext;
+	document.getElementById('happy').onchange = sure;
 }

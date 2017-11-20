@@ -21,7 +21,7 @@
 
 <p>New User Custom Order Form</p>
 
-<form method="get" action="#">
+<form method="get" action="#" name="fancy">
 	<label for="name">Name</label>
 	<input type="text" name="shippee" id="name" placeholder="name on package"/>
 	<br/>
@@ -73,15 +73,18 @@
 	</fieldset>
 		
 	
-	<label for="text">Special instructions:</label><br/>
-	<textarea id="text" rows="3" cols="30" placeholder="IE: place in sporting goods box"></textarea>
+	<label for="textplace">Special instructions:</label>
+	<br/>
 	<span id="remain"></span>
 	<br/>
-	<label for="happy" >would you like This company to spam your email?
+	<textarea id="textplace" rows="12" cols="40" placeholder="IE: place in sporting goods box"></textarea>
+	
+	<br/>
+	<label for="happy"> Get extended warrantees for $9.99/month
 	</label>
 	<input type="checkbox" name="check" value="please" id="happy" checked="checked" />
-		<p> <sub>*note: by not checking the box you agree to have your 
-			<br/>information released to other companies (so they can spam you) </sub> </p>
+		
+	<p id="happytxt"></p>
 
 	<br/><br/><br/>
 	<input type="submit" name="sent" value="send" />
