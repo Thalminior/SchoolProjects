@@ -1,0 +1,21 @@
+/* http://paletton.com/#uid=13L0u0kwi++bu++hX++++rd++kX */
+body{
+	background-color: #1a60ff;
+}
+h1,h2,h3{
+	text-align: center;
+}
+p{
+	text-indent: 3em;
+}
+.container{
+	position: relative;
+	border-collapse: collapse;
+}
+.column{
+	float: left;
+	max-width: 25rem;
+	border: 5px solid #adc6ff;
+	border-radius: 10px;
+	margin: 5px;
+}

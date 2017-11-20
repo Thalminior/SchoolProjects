@@ -10,7 +10,7 @@ function createValidator(linkID)
 	var validatorLink = '<a href="http://validator.w3.org/nu/?doc=';
 	validatorLink += myURL;
 	validatorLink += '">HTML 5 Validator</a>';
-	console.log(validatorLink);
+	//console.log(validatorLink);
 	document.getElementById(linkID).innerHTML = validatorLink;
 } 
 

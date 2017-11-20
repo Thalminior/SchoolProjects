@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Login</title>
+<title>form validation</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="dcterms.rightsHolder" content="Jzared Hall" />
+<meta name="dcterms.rightsHolder" content="Jared Hall" />
 <meta name="dcterms.dateCopyrighted" content="2017" />
 <meta name="description" content="Broken login page" />
 <meta name="keywords" content=""/>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="../cis233da/style/flex.css" type="text/css" />
 <script src="jscript/validator.js"></script>
-<script src="jscript/calc.js"></script>
+<script src="jscript/formvalid.js"></script>
 </head>
 <body>
-<div class="GoBack">
-<a href="./">
-Go Back</a>
+<div class="GoBack"><a href="./">Go Back</a></div>
+
+<div class="container" >
+<div class="bigitem">
+
+
+<p>New User Custom Order Form</p>
+
+<form method="get" action="#">
+	<label for="name">Name</label>
+	<input type="text" name="shippee" id="name" placeholder="name on package"/>
+	<br/>
+	<span id="err1"></span>
+	<br/>
+	<label for="user">Create Username</label>
+	<input type="text" name="user" id="user" placeholder="login"/>
+	<br/>
+	<span id="err2"></span>
+	<br/>
+	<label for="password">Password:</label>
+	<input type="password" name="passwd" id="password" placeholder=""/>
+	<br/>
+	<span id="err3"></span>
+	<br/>
+
+	<label for="hmany">Quantity:</label>
+	<input type="text" name="Quantity" id="hmany" placeholder="##"/>
+	<br/>
+	<span id="err4"></span>
+	<p>information from selector here</p>
+	<select name="choose" id="choose">
+	</select>
+	<br/>
+	<br/>
+
+	<fieldset id="optnum">
+		<legend>Customization: </legend>
+			<span id="opterr"></span> <br/> 
+				<input type="radio" name="response" value="1"/> 1
+				<input type="radio" name="response" value="2"/> 2
+				<input type="radio" name="response" value="3"/> 3
+				<input type="radio" name="response" value="4"/> 4
+				<input type="radio" name="response" value="5"/> 5
+				<input type="radio" name="response" value="6"/> 6
+		
+	</fieldset>
+	
+	<br/>
+	<fieldset id="color">
+		<legend>Color</legend>
+			<span id="colerr"></span><br/>
+				<input type="radio" name="choice" value="red"/> red
+				<input type="radio" name="choice" value="green"/> green
+				<input type="radio" name="choice" value="blue"/> blue
+				<input type="radio" name="choice" value="glass"/> glass
+				<input type="radio" name="choice" value="pink"/> pink
+				<input type="radio" name="choice" value="natural"/> natural
+	</fieldset>
+		
+	
+	<label for="text">Special instructions:</label><br/>
+	<textarea id="text" rows="3" cols="30" placeholder="IE: place in sporting goods box"></textarea>
+	<span id="remain"></span>
+	<br/>
+	<label for="happy" >would you like This company to spam your email?
+	</label>
+	<input type="checkbox" name="check" value="please" id="happy" checked="checked" />
+		<p> <sub>*note: by not checking the box you agree to have your 
+			<br/>information released to other companies (so they can spam you) </sub> </p>
+
+	<br/><br/><br/>
+	<input type="submit" name="sent" value="send" />
+	<input class="round" type="reset" name="clear" value="reset" /> 
+
+</form>
 </div>
-
-
-
-
-
-
-
-<div id="validator">
 </div>
+<div id="validator"> </div>
 </body>
 </html>
