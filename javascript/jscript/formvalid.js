@@ -1,5 +1,6 @@
 window.onload = setup;
 
+//number dropdown
 function createMenu(startNum,endNum,menuMsg,targetId){
 	var tell = '<option value="">' + menuMsg + '</option>';
 	var counter = startNum;
@@ -27,6 +28,7 @@ function check(idtag,error,min,max){
 	}
 }
 
+//dropdown checker
 function checkNum(){
 	if(isNaN(document.getElementById("hmany").value)){
 		document.getElementById("err4").innerHTML = "numeric value only"
@@ -87,13 +89,22 @@ function sure (){
 	}
 	else{
 		if(confirm(areYouSure) == true){
-				document.getElementById('happy').checked = false;
-				document.getElementById("happytxt").innerHTML = "You have been warned!";
-			}
-			else{
-				document.getElementById('happy').checked = true;
-				Excelent;
-			}
+			document.getElementById('happy').checked = false;
+			document.getElementById("happytxt").innerHTML = "You have been warned!";
+		}
+		else{
+			document.getElementById('happy').checked = true;
+			Excelent;
+		}
+	}
+}
+
+function sconf(){
+	if(document.getElementById('choose').value == ""){
+		document.getElementById('err5').innerHTML = "Please select a base model";
+	}
+	else{
+		document.getElementById('err5').innerHTML = "Excelent!";
 	}
 }
 
@@ -110,4 +121,19 @@ function setup ()
 	document.getElementById('color').onmouseover = radiocheck2;
 	document.getElementById('textplace').onkeyup = checktext;
 	document.getElementById('happy').onchange = sure;
+	document.getElementById('choose').onchange = sconf;
+// 	document.fancy.onreset = function(){
+// 		var c1 = check('name',"err1",5,12);
+// 		var	c2 = check("user","err2",5,12);
+// 		var	c3 = check("password","err3",12,24);
+// 		c1();
+// 		c2();
+// 		c3();
+// 		checkNum;
+// 		radiocheck;
+// 		radiocheck2;
+// 		checktext;
+// 		sure;
+// 		sconf;
+//	}
 }

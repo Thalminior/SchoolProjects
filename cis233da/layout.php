@@ -12,24 +12,16 @@
 <script src="../javascript/jscript/validator.js"></script>
 </head>
 <body>	
-		
-	<input type="checkbox" id="toggle">
-	<label for="toggle" >NAV</label>
-	<nav>
-		<ul>
-			<li><a href="./">Home</a></li> 
-			<li><a href="review.html">Review Page</a></li>
-			<li><a href="newhtml5.html">New Html 5 </a></li>
-			<li><a href="graphics.html">Graphics </a></li>
-			<li><a href="layout.html">Layout </a></li>
-		</ul> 
-		<a id="validator"></a>
-	</nav>
+<?php
+require_once 'navbar.inc.html';
+?>
 
 
 <div class="container">
 <h1>world powers</h1>		
 <div class="textitem">
+		<img  class="picitem" src="images/Magi.svg" alt="Magi royal crest" title="magi base crest" height='300' width='150' />
+	
 	<article> 
 		<h2>Birth of an Empire - The Magi</h2>			
 		<p>The magi are the inhabatants of an ancent empire that was reborn during the war of ash and bone.
