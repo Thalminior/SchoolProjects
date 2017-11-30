@@ -1,60 +1,3 @@
-/* http://paletton.com/#uid=23h0u0kw0jqodrrsFnhFWePQ19p */
-body{
-	background:#005e5a;
-}
-.container{
-	position: relative;
-	border-collapse: collapse;
-	padding: 12px;
-	background-color: #005e5a;
-}
-section{
-	border: 4px solid #afafaf;
-	position: relative;
-	padding-left: 10px;
-	margin: 12px 0;
-	padding: 1rem;
-	
-}
-h1,h2,h3{
-	text-align: center;
-}
-h2{
-	margin: 12px auto;
-	width: 90%;
-	padding: 12px;
-	background: #0c716d;
-	border-bottom: 4px solid #208581;
-	border-radius: 10px;
-	padding-left: 1rem;
-}
-img{
-	/* images base size @ 300 x 300 */
-	/* background-color: #afafaf; */
-	display: block;
-	max-width: 20%;
-	height: 100%;
-	float: left;
-	padding: 0 12px;
-	margin: auto;
-}
-.wordplace{
-	border: 6px double #9b4500;
-	border-radius: 6px;
-	text-indent: 3em;
-	max-width: 70%;
-	float: left;
-	padding-left: 12px;
-	border-collapse: collapse;
-	background: #afafaf;
-	}
-	p{
-		padding: 0 1rem;
-		text-align:justify;
-		text-indent:2em;
-		font-family: sans-serif;
-	}
-
 
 
 /* clearfix */
@@ -82,7 +25,7 @@ img{
 		z-index: 1;
 		color: #000000;	
 		cursor: pointer;
-		display: inline-block;
+		/* display: inline-block; */
 		font-size: 18px;
 		padding: 5px 9px;
 		transition: all .15s ease;
@@ -111,10 +54,16 @@ img{
 	input:checked ~ nav {
 		max-height: 500px;
 	}
-	li {
+	nav li {
 		border-bottom: 1px solid #1a60ff;
 		background-color: #ffffff;
 		margin-left: -40px;
+		border-radius: 6px;
+	}
+	nav li li {
+		/* border-bottom: 1px solid #1a60ff; */
+		background-color: #ffffff;
+		text-indent: 20px;
 		border-radius: 6px;
 	}
 	li:last-child {

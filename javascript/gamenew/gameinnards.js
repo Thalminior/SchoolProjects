@@ -1,5 +1,7 @@
 window.onload = setUpEvents;
 
+
+// background image
 var bgReady = false;
 var bgImage = new Image();
 bgImage.onload = function () {
@@ -27,6 +29,7 @@ monsterImage.src = "images/monsters.png";
 
 function setUpEvents()
 {
+	// touchpad and onscreen button funcutanality
 	document.getElementById('left').onmousedown = move('left');
 	document.getElementById('left').onmouseup = move('stop');
 	document.getElementById('left').ontouchstart = move('left');
@@ -86,8 +89,8 @@ function setUpEvents()
 		hero.y = canvas.height / 2;
 
 		// Throw the monster somewhere on the screen randomly
-		monster.x = 32 + (Math.random() * (canvas.width - 64));
-		monster.y = 32 + (Math.random() * (canvas.height - 64));
+		monster.x = monsterImage.width + (Math.random() * (canvas.width - (monsterImage.width * 2)));
+		monster.y = monsterImage.height + (Math.random() * (canvas.height - (monsterImage.height * 2)));
 	};
 
 	// Update game objects
@@ -101,8 +104,8 @@ function setUpEvents()
 		}
 		if (40 in keysDown || hero.direction == 'down' ) { // Player holding down
 			hero.y += hero.speed * modifier;
-			if(hero.y > canvas.height - heroImage.height + (heroImage.height/2)){
-				hero.y = canvas.height - heroImage.height + (heroImage.height/2);
+			if(hero.y > canvas.height - heroImage.height + (heroImage.height - heroImage.height )){
+				hero.y = canvas.height - heroImage.height + (heroImage.height - heroImage.height );
 			}
 		
 		}
@@ -123,11 +126,12 @@ function setUpEvents()
 		}
 
 		// Are they touching?
+		var herowepon
 		if (
-			hero.x <= (monster.x + 50)
-			&& monster.x <= (hero.x + 50)
-			&& hero.y <= (monster.y + 50)
-			&& monster.y <= (hero.y + 50)
+			hero.x <= (monster.x + monsterImage.width)
+			&& monster.x <= (hero.x + heroImage.width)
+			&& hero.y <= (monster.y + monsterImage.height)
+			&& monster.y <= (hero.y + heroImage.height)
 		) {
 			++monstersCaught;
 			reset();

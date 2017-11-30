@@ -48,12 +48,12 @@ img{
 	border-collapse: collapse;
 	background: #ffffff;
 	}
-	p{
-		padding: 0 1rem;
-		text-align:justify;
-		text-indent:2em;
-		font-family: sans-serif;
-	}
+p{
+	padding: 0 1rem;
+	text-align:justify;
+	text-indent:2em;
+	font-family: sans-serif;
+}
 
 
 

@@ -1,4 +1,4 @@
-/* http://paletton.com/palette.php?uid=53h0u0kl6lPaFw0g0qFqFg0w0aF */
+/* http://paletton.com/#uid=52Z1i0kllllaFw0g0qFqFg0w0aF */
 
 body{
 	background:#246a67;
@@ -6,7 +6,7 @@ body{
 }
 aside{
 	width:14rem;
-	border: 5px groove black;
+	border: 5px groove rgb(187, 108, 108);
 	position: fixed;
 	float: left;
 	text-align: left;
