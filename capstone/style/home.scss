@@ -1,0 +1,5 @@
+//mixins
+@mixin centertitle($fsize){
+    text-align: center;
+    font-size: $fsize;
+}

@@ -1,4 +1,4 @@
-window.onpageshow = setupEvents;
+window.onload = setupEvents;
 function setupEvents()
 {
 	createValidator('validator')
