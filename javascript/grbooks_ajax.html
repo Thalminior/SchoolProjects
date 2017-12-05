@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GRBooks Ajax Test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="dcterms.rightsHolder" content="Jared Hall" />
+<meta name="dcterms.dateCopyrighted" content="2017" />
+<meta name="description" content="A short description of the page" />
+<meta name="keywords" content=""/>
+<script src="jscript/grbooks.js"></script>
+<script src="jscript/validator.js"></script>
+<link rel="stylesheet" href="../cis233da/style/flex.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+
+<div class="bigitem">
+
+<form method="get" action="#">
+    <label for="year">Search by Year</label>
+    <input type="text" name="yearbook" id="year" />
+    <br />
+    <label for="title">Search by title</label>
+    <input type="text" name="booktitle" id="title" />
+    <br />
+        <label for="yearjson">Search by Year, JSON output</label>
+    <input type="text" name="yearbookjson" id="yearjson" />
+    <br />
+    <label for="author">Search by Author</label>
+    <input type="text" name="bookauthor" id="author" />
+</form>
+</div>   
+<div class="bigitem" >
+    <p>This is search by year output</p>
+    <p id="outputyear" >
+
+    </p>
+</div>
+<div class="bigitem" >
+    <p>This is search by title output</p>
+    <p id="titleoutput" >
+    </p>
+</div>
+<div class="bigitem" >
+    <p>This is search by year JSON output</p>
+    <p id="yearout" >
+    </p>
+</div>
+<div class="bigitem" >
+    <p>This is search by title output</p>
+    <p id="authoroutput" >
+    </p>
+</div>
+</body>
+</html>
