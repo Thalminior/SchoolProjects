@@ -14,8 +14,8 @@ header > p {
 }
 
 header img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 200px;
   display: block;
   float: left;
 }
@@ -82,7 +82,6 @@ nav ul {
 
 nav li {
   border-bottom: 1px solid #1a60ff;
-  margin-left: -40px;
   border-radius: 6px;
   background-color: #ffffff;
 }

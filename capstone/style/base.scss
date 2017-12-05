@@ -11,7 +11,7 @@
 }
 @mixin borderhighlight{
     border-bottom: 5px solid #4dbec9;
-    border-radius: 0 10px;
+    border-radius: 5px  5px 10px 10px;
 }
 @mixin linkhover{
     a:hover{
@@ -47,9 +47,7 @@ h3{
     @include linkhover();
 }
 
-// section{
-      
-// }
+
 article{
 
     p{

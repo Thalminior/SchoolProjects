@@ -24,8 +24,9 @@ header{
         
      }
     img{
-        width:200px;
-        height: auto;
+        width:auto;
+        
+        height: 200px;
         display: block;
         float: left;
     }
@@ -86,11 +87,13 @@ header{
             @include radNcol;
             list-style: outside none;
             width: 150px;
+            
         }
         li {
             border-bottom: 1px solid #1a60ff;
-            margin-left: -40px;
+            // margin-left: -40px;
             @include radNcol;
+            
             li {
                 @include radNcol();
                 text-indent: 20px;

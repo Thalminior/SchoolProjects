@@ -13,7 +13,7 @@ function ajaxfunction(command,sourceID,targetID,useJSON)
                     var jsonMsg = "Json List of Titles <br />";
                     for (var i=0,len = myArr.length; i < len; i++)
                     {
-                        jsonMsg = jsonMsg + myArr[i].title + ',' + myArr[i].year + '<br />';
+                        jsonMsg = jsonMsg + myArr[i].title + ',---,' + myArr[i].year + '<br />';
                     }
                     document.getElementById(targetID).innerHTML = jsonMsg;
                 }
@@ -30,7 +30,9 @@ function ajaxfunction(command,sourceID,targetID,useJSON)
     }   
 }
 
-
+function yearparse(jsonString){
+    
+}
 
 
 window.onload = setupEvents;
@@ -40,4 +42,4 @@ function setupEvents()
     document.getElementById('title').onkeyup = ajaxfunction('bytitle','title','titleoutput','no');
     document.getElementById('yearjson').onkeyup = ajaxfunction('byyearjson','yearjson','yearout','yes');
     document.getElementById('author').onkeyup = ajaxfunction('byauthor','author','authoroutput','no');
-    }
+}
