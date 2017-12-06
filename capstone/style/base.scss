@@ -23,11 +23,18 @@
 .container{
     padding:2rem;
     max-width: 80rem;
+    position: relative;
+    
+    a {
+        color: #000000;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+    @include linkhover();
 }
 h1{
     @include centertitle(2.5rem);
     margin: -2rem 0 3rem 0;
-    @include linkhover();
    
 }
 h2{
@@ -41,11 +48,8 @@ h3{
     background-color: #6565d6;
     padding-left: 3rem;
     @include borderhighlight;
-    a{
-        color: black;
-    }
-    @include linkhover();
 }
+
 
 
 article{
