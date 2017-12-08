@@ -9,13 +9,9 @@ function ajaxfunction(command,sourceID,targetID,useJSON)
             {
                 if(useJSON == "yes")
                 {
-                    var myArr = JSON.parse(this.responseText);
-                    var jsonMsg = "Json List of Titles <br />";
-                    for (var i=0,len = myArr.length; i < len; i++)
-                    {
-                        jsonMsg = jsonMsg + myArr[i].title + ',---,' + myArr[i].year + '<br />';
-                    }
-                    document.getElementById(targetID).innerHTML = jsonMsg;
+                    
+                    var datahere = yearparse(this.responseText);
+                    document.getElementById(targetID).innerHTML = datahere;                    
                 }
                 else
                 {
@@ -31,15 +27,25 @@ function ajaxfunction(command,sourceID,targetID,useJSON)
 }
 
 function yearparse(jsonString){
-    
+    var myArr = JSON.parse(jsonString);
+    var tableout = '<table><tr><th>Book Title</th><th>Year</th><th>Publisher</th><th>ISBN 13</th></tr>';
+    for (var i=0,len = myArr.length; i < len; i++){        
+            tableout +='<tr><td>' + myArr[i].title + '</td><td>' + myArr[i].year + '</td><td>' + myArr[i].publisher + '</td><td>' + myArr[i].isbn13 + '</td></tr>';
+        }
+    tableout += '</table>';
+    return tableout;
+
+
 }
 
 
-window.onload = setupEvents;
-function setupEvents()
+
+
+window.onload = setup;
+function setup()
 {
     document.getElementById('year').onkeyup = ajaxfunction('byyear','year','outputyear','no');
     document.getElementById('title').onkeyup = ajaxfunction('bytitle','title','titleoutput','no');
     document.getElementById('yearjson').onkeyup = ajaxfunction('byyearjson','yearjson','yearout','yes');
     document.getElementById('author').onkeyup = ajaxfunction('byauthor','author','authoroutput','no');
-}
+    }

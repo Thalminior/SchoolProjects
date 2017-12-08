@@ -43,7 +43,7 @@ h2{
     border-radius: 6px;
     margin:0 5rem;
 }
-h3{
+h3,h4{
     @include lefttitle(1.5rem);
     background-color: #6565d6;
     padding-left: 3rem;

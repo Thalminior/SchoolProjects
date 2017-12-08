@@ -29,7 +29,7 @@ h2 {
   margin: 0 5rem;
 }
 
-h3 {
+h3, h4 {
   text-align: left;
   font-size: 1.5rem;
   background-color: #6565d6;
