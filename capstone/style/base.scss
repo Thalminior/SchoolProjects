@@ -49,13 +49,17 @@ h3,h4{
     padding-left: 3rem;
     @include borderhighlight;
 }
-
-
-
 article{
 
     p{
         text-indent: 2rem;
         padding: 0 1.5rem;
     }
+}
+.clickmap img {
+    max-width: 80rem;
+    height: auto;
+    display: block;
+    margin: auto;
+    
 }
