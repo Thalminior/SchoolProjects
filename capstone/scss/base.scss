@@ -16,12 +16,14 @@
 @mixin linkhover{
     a:hover{
         color: #28b0bd ;
-        font-weight: bold;}
+        font-weight: bold;
+        font-size: 105%;
+    }
 }
 
-
 .container{
-    padding:2rem;
+    min-height: 100%;
+    padding: 2rem;
     max-width: 80rem;
     position: relative;
     
@@ -50,7 +52,6 @@ h3,h4{
     @include borderhighlight;
 }
 article{
-
     p{
         text-indent: 2rem;
         padding: 0 1.5rem;

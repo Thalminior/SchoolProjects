@@ -1,6 +1,9 @@
 .container {
+  padding: 12px;
+  min-height: 100%;
   max-width: 80rem;
   position: relative;
+  font-family: arial;
 }
 
 .container a {
@@ -21,6 +24,7 @@
   justify-content: center;
   align-items: stretch;
   background-color: #4DBEC9;
+  min-height: 400px;
 }
 
 h1 {
@@ -30,7 +34,7 @@ h1 {
 }
 
 .pagelink {
-  flex: 1 1 12rem;
+  flex: 1 1 14rem;
   padding: 1rem;
   box-shadow: 2px 0 0 0 #0c0c7d,  0 2px 0 0 #0c0c7d,  2px 2px 0 0 #0c0c7d, 2px 0 0 0 #0c0c7d inset,  0 2px 0 0 #0c0c7d inset;
   border-radius: 3px;
@@ -40,12 +44,13 @@ h1 {
 .pagelink a:hover {
   color: #0c0c7d;
   font-weight: bold;
+  font-size: 105%;
 }
 
 .pagelink h2 {
   text-align: center;
   font-size: 1.5rem;
-  border-bottom: 5px solid #4dbec9;
+  border-bottom: 5px solid #0c0c7d;
   border-radius: 0 10px 10px;
   margin: -5px 0 0 0;
 }

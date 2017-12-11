@@ -105,6 +105,32 @@ nav a {
 nav a:hover {
   color: #28b0bd;
   font-weight: bold;
+  font-size: 105%;
+}
+
+/* footer */
+footer {
+  background-color: #1d1dc8;
+  min-height: 50px;
+  max-height: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+footer a {
+  color: #ffffff;
+  padding-left: 5rem;
+}
+
+footer a:hover {
+  color: #28b0bd;
+  font-weight: bold;
+  font-size: 105%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
  
 
