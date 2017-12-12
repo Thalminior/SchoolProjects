@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title> Contact </title>
-<link rel="shortcut icon" href="images/favicon.png"/>
+<link rel="shortcut icon" href="images/favicon.ico"/>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="dcterms.rightsHolder" content="Jared Hall" />
@@ -10,14 +10,51 @@
 <meta name="description" content=" Contact Form " />
 <meta name="keywords" content=""/>
 <link rel="stylesheet" href="style/base.css" type="text/css" />
-<link rel="stylesheet" href="style/headnav.css" type="text/css" />
+<link rel="stylesheet" href="style/head.css" type="text/css" />
+<link rel="stylesheet" href="style/form.css" type="text/css" />
 <script src="script/htmlvalidator.js"></script>
 </head>
 <body>
 
-<!-- replace this -->   <header class="clearfix"> <a href="./"><img src="images/magi.svg" alt="test image of smily face" height='200' width="200"  ></a>    <p> The World of Veridin </p></header>
+<!-- replace me -->        <header class="clearfix"> <a href="./"><img src="images/magi.svg" alt="Magi Emblem"></a>    <p> The World of Veridin </p> </header>
+<div id="nav" ></div>
+
+
 <div class="container">
-    
+<h1>Contact The Author</h1>
+
+
+<form method="get" action="#" id="contactform">
+    <label for="name">Name</label>
+	<input type="text" name="shippee" id="name" placeholder="name"/>
+	<br/>
+	<label for="user">Return e-mail</label>
+	<input type="email" name="contact" id="user" placeholder="return@address.com"/>
+    <br/>
+    <br/>
+
+	<fieldset id="why">
+		<legend>Reason for contact </legend>
+				<input type="radio" name="response" value="lore"/>lore<br/>
+				<input type="radio" name="response" value="history"/>history<br/>
+				<input type="radio" name="response" value="feedback"/>feedback<br/>
+				<input type="radio" name="response" value="races"/>races <br/>
+				<input type="radio" name="response" value="map"/>map<br/>
+				<input type="radio" name="response" value="other"/>other<br/>
+	</fieldset>
+	<br/>
+	
+	<label for="textplace">Information requested:</label>
+	<span id="remain"></span>
+	<br/>
+	<textarea id="textplace" rows="12" cols="50"></textarea>
+	
+	<br/>
+	<input type="submit" name="sent" value="send" />
+	<input class="round" type="reset" name="clear" value="reset" /> 
+
+</form>
+        
 
 </div>
 

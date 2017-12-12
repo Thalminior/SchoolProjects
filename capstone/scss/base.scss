@@ -26,6 +26,7 @@
     padding: 2rem;
     max-width: 80rem;
     position: relative;
+    font-family: arial;
     
     a {
         color: #000000;
@@ -35,18 +36,18 @@
     @include linkhover();
 }
 h1{
-    @include centertitle(2.5rem);
-    margin: -2rem 0 3rem 0;
+    @include centertitle(2rem);
+    // margin: 0 0 3rem 0;
    
 }
 h2{
-    @include centertitle(2rem);
+    @include centertitle(1.75rem);
     border: 5px double #0c0c7d;
     border-radius: 6px;
     margin:0 5rem;
 }
 h3,h4{
-    @include lefttitle(1.5rem);
+    @include lefttitle(1.25rem);
     background-color: #6565d6;
     padding-left: 3rem;
     @include borderhighlight;

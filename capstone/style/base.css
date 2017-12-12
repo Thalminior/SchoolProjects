@@ -3,6 +3,7 @@
   padding: 2rem;
   max-width: 80rem;
   position: relative;
+  font-family: arial;
 }
 
 .container a {
@@ -19,13 +20,12 @@
 
 h1 {
   text-align: center;
-  font-size: 2.5rem;
-  margin: -2rem 0 3rem 0;
+  font-size: 2rem;
 }
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   border: 5px double #0c0c7d;
   border-radius: 6px;
   margin: 0 5rem;
@@ -33,7 +33,7 @@ h2 {
 
 h3, h4 {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: #6565d6;
   padding-left: 3rem;
   border-bottom: 5px solid #4dbec9;
@@ -51,6 +51,3 @@ article p {
   display: block;
   margin: auto;
 }
- 
-
- /*# sourceMappingURL= base.css.map */

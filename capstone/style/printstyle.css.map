@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAIA,AAAA,MAAM,CAAA;EACF,SAAS,EAAE,GAAG;CAEjB;;AACD,AAAA,GAAG,CAAA;EACK,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "../scss/printstyle.scss"
-    ],
-    "names": [],
-    "file": "printstyle.css"
-}
