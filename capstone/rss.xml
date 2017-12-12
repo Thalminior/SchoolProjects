@@ -2,6 +2,20 @@
 <rss version="2.0">
 <channel>
 <title>World Updates </title>
-<description>Updated For the World of Varidin</description>
+<description>Updated For The World of Varidin</description>
 <link>https://nbtl.mesacc.edu/thalminior/capstone/</link>
 <copyright>Copyright 2017, Jared Hall</copyright>
+
+<item>
+    <title>Added Map</title>
+    <description>new interactive map</description>
+    <link>https://nbtl.mesacc.edu/thalminior/capstone/worldmap.html</link>
+    <pubDate>12 dec 2017 22:00:00 MST</pubDate>
+</item>
+
+<item>
+    <title>Timeline added!</title>
+    <description>Added in a Timeline with actual line</description>
+    <link>https://nbtl.mesacc.edu/thalminior/capstone/timeline.html</link>
+    <pubDate> 10 dec 2017 10:00:00 MST</pubDate>
+</item>
